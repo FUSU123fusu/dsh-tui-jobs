@@ -1,5 +1,7 @@
 # dsh-tui-jobs
 
+> 适用于 [dsh-TUI](https://github.com/ccch1mneyyy/dsh-TUI)（[dshtui.com](https://dshtui.com)）的社区插件。
+
 dsh-TUI 的后台任务面板：`/jobs` 列出当前所有可见的后台任务（bash、子 agent 等），状态变化实时刷新，可查看已完成任务的输出、取消运行中的任务。补齐官方 WebUI 有而 TUI 没有的任务列表面。
 
 [English](#english) below.
