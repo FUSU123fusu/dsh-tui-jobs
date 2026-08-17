@@ -1,0 +1,29 @@
+{
+  "name": "dsh-tui-jobs",
+  "version": "0.1.0",
+  "description": "Background jobs panel for dsh-TUI: /jobs lists, watches, inspects and cancels background jobs (bash, subagent, …) via the ctx.jobs registry.",
+  "type": "module",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./cordis.patch.yml": "./cordis.patch.yml",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "lib",
+    "cordis.patch.yml",
+    "dsh.plugin.json"
+  ],
+  "engines": {
+    "node": "^22.19 || >=24"
+  },
+  "scripts": {
+    "test": "node --test"
+  },
+  "license": "MIT",
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  }
+}

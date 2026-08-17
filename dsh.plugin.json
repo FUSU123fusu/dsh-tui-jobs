@@ -1,0 +1,9 @@
+{
+  "name": "dsh-tui-jobs",
+  "displayName": "Jobs Panel",
+  "description": "后台任务面板：/jobs 列出、跟踪、查看输出并取消后台任务（bash、子 agent 等）。",
+  "version": "0.1.0",
+  "entry": "lib/index.js",
+  "command": "jobs",
+  "homepage": "https://github.com/FUSU123fusu/dsh-tui-jobs"
+}
