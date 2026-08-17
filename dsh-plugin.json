@@ -1,0 +1,45 @@
+{
+  "$schema": "https://dsh.community/schemas/dsh-plugin-0.1.json",
+  "id": "dsh-tui-jobs",
+  "name": "Jobs Panel",
+  "version": "0.1.0",
+  "manifestVersion": "0.1",
+  "apiVersion": "0.1",
+  "entry": "lib/index.js",
+  "requires": {
+    "capabilities": {
+      "required": [
+        {
+          "name": "commands",
+          "version": "0.1",
+          "schemaHash": "sha256:44fd09e55246deef61dae0f4d07b84ec88160201226d414b29d46fc759be75b1"
+        }
+      ],
+      "optional": []
+    }
+  },
+  "permissions": [
+    {
+      "name": "commands.invoke",
+      "scope": "declared command id dsh-tui-jobs.jobs",
+      "reason": "The /jobs command lists, inspects and cancels background jobs from the ctx.jobs registry."
+    }
+  ],
+  "contributes": {
+    "commands": [
+      {
+        "id": "dsh-tui-jobs.jobs",
+        "title": "Jobs Panel",
+        "description": "List, watch, inspect output of, and cancel background jobs (bash, subagent, …)."
+      }
+    ]
+  },
+  "subscriptions": [],
+  "license": "MIT",
+  "source": {
+    "repository": "https://github.com/FUSU123fusu/dsh-tui-jobs"
+  },
+  "compat": {
+    "hosts": ["dsh-tui"]
+  }
+}
