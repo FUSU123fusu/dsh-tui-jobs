@@ -26,11 +26,14 @@ dsh-TUI 的后台任务面板：`/jobs` 列出当前所有可见的后台任务�
 
 ## 安装
 
-```
-dsh plugin --profile <你的profile> add dsh-tui-jobs
-```
+暂未发布到 npm，从源码打包安装：
 
-或从源码：`npm pack` 后 `dsh plugin --profile <你的profile> add file:<tgz路径>`。
+```bash
+git clone https://github.com/FUSU123fusu/dsh-tui-jobs.git
+cd dsh-tui-jobs
+npm pack
+dsh plugin --profile <你的profile> add file:dsh-tui-jobs-0.1.0.tgz
+```
 
 ## 开发
 
